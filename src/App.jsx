@@ -5,8 +5,7 @@ import About from './components/About';
 import Blog from './components/Blog';
 import BlogDetails from './components/BlogDetails';
 import Navbar from './components/Navbar';
-import Photo from './components/ProfilePhoto';
-import './App.css';
+
 import Counter from './components/Counter';
 import Form from './components/Form';
 import AddBlog from './components/AddBlog';
