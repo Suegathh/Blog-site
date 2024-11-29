@@ -15,6 +15,9 @@ function Navbar() {
             <Link to="/dataFetch">DataFetch</Link>
             <Link to="/users">Users</Link>
             <Link to="/github">Github</Link>
+            <Link to="/loginForm">LoginForm</Link>
+            <Link to="/toDoApp">ToDo</Link>
+            <Link to="/studentForm">Student Form</Link>
         </nav>
     );
 }

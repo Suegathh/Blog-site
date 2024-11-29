@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import About from './components/About';
@@ -16,8 +16,11 @@ import Users from './components/Users';
 import Github from './components/GithubApi';
 import TitleData from './components/TitleData';
 import { ThemeContext, ThemeProvider } from './components/ThemeContext';
-import { useContext } from 'react';
 import './App.css';
+import RefInput from './assets/RefInput';
+import LoginForm from './components/LoginForm';
+import TodoApp from './components/ToDo';
+import StudentForm from './components/StudentForm';
 
 function App() {
   return (
@@ -39,13 +42,13 @@ const ThemeWrapper = () => {
         <button 
           className='theme-toggle-btn'
           onClick={toggleTheme}
-          >
+        >
           {theme === "light" ? "Switch to Dark Mode" : "Switch to Light Mode"}
         </button>
       </div>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
+        <Route path="/about" element={<About />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blogdetails" element={<BlogDetails />} />
         <Route path="/counter" element={<Counter />} />
@@ -58,6 +61,10 @@ const ThemeWrapper = () => {
         <Route path="/users" element={<Users />} />
         <Route path="/github" element={<Github />} />
         <Route path="/titleData" element={<TitleData />} />
+        <Route path="/refInput" element={<RefInput />} />
+        <Route path="/loginForm" element={<LoginForm />} />
+        <Route path="/toDoApp" element={<TodoApp />} />
+        <Route path="/studentForm" element={<StudentForm />} />
       </Routes>
     </div>
   );
